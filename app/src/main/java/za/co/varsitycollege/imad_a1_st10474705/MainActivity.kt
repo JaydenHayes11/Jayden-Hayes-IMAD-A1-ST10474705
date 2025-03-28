@@ -1,6 +1,9 @@
 package za.co.varsitycollege.imad_a1_st10474705
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +14,47 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val ResetPageButton = findViewById<Button>(R.id.ResetPageButton)
+        val ShowSuggestionsButton = findViewById<Button>(R.id.ShowSuggestionsButton)
+        val TimeOfDayText = findViewById<TextView>(R.id.TimeOfDayText)
+        val DisplayTextView = findViewById<TextView>(R.id.DisplayTextView)
+
+        ShowSuggestionsButton?.setOnClickListener {
+
+            DisplayTextView.text = ""
+
+            Toast.makeText(
+                this@MainActivity,
+                "Suggestions Shown", Toast.LENGTH_LONG
+            ).show()
+
+
         }
+
+
+
+
+        ResetPageButton?.setOnClickListener {
+
+            TimeOfDayText.text = ""
+            DisplayTextView.text = "Options for time of Day:Morning,Mid-Morning,Afternoon,Mid-Afternoon,Dinner,After-Dinner"
+
+            Toast.makeText(
+                this@MainActivity,
+                "Page Reset", Toast.LENGTH_LONG
+            ).show()
+        }
+
+
+
+
+
+
+
+
     }
+
+
+
 }
