@@ -28,6 +28,24 @@ class MainActivity : AppCompatActivity() {
                 this@MainActivity,
                 "Suggestions Shown", Toast.LENGTH_LONG
             ).show()
+            if (TimeOfDayText.text.toString() == ("Morning") || TimeOfDayText.text.toString() == ("morning")) {
+                DisplayTextView.setText("Avocado Toast, Boiled Eggs, Omelet")
+            }
+            else if (TimeOfDayText.text.toString() == ("Mid-Morning") || TimeOfDayText.text.toString() == ("mid-morning")) {
+                DisplayTextView.setText("Muffins, Bagels, Fruit")
+            }
+            else if (TimeOfDayText.text.toString() == ("Afternoon") || TimeOfDayText.text.toString() == ("afternoon")) {
+                DisplayTextView.setText("Sandwich, French Toast, Salad")
+            }
+            else if (TimeOfDayText.text.toString() == ("Mid-Afternoon") || TimeOfDayText.text.toString() == ("mid-afternoon")) {
+                DisplayTextView.setText("Instant Noodles, Burritos, Pasta")}
+            else if (TimeOfDayText.text.toString() == ("Dinner") || TimeOfDayText.text.toString() == ("dinner")) {
+                DisplayTextView.setText("Spaghetti, Butter Chicken, Pizza")}
+            else if (TimeOfDayText.text.toString() == ("After-Dinner") || TimeOfDayText.text.toString() == ("after-dinner")) {
+                DisplayTextView.setText("Ice Cream, CupCakes, MilkShakess")}
+            else{
+                DisplayTextView.setText("Invalid Option Entered")
+            }
 
 
         }
