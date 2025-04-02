@@ -17,10 +17,6 @@ jobs:
           java-version: '17'
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
-      - name: Check out the repository
-        uses: actions/checkout@v2
-      - name: Make script executable
-        run: chmod +x ./scripts/your-script.sh
       - name: Build Project
         run: ./gradlew assembleDebug
       - name: Run unit test
