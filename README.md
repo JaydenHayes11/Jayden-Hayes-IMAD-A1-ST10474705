@@ -23,3 +23,6 @@ In order to create a sleek simpistic design to be user friendly and not confuse 
 # Links
 - GitHub: https://github.com/JaydenHayes11/Jayden-Hayes-IMAD-A1-ST10474705.git
 - Youtube: https://youtube.com/shorts/L_8PrDlxGlo?feature=shared
+
+# References
+Capcut for Youtube videos AI voice over
