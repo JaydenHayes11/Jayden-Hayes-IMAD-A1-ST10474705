@@ -18,7 +18,7 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
       - name: Grant execute permission to Gradle wrapper
-        run: chmod+x gradlew
+        run: chmod +x gradlew
       - name: Build Project
         run: ./gradlew assembleDebug
       - name: Run unit test
